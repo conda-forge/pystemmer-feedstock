@@ -1,17 +1,17 @@
 {% set name = "pystemmer" %}
-{% set version = "2.2.0.1" %}
+{% set version = "2.2.0.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/PyStemmer-{{ version }}.tar.gz
-  sha256: 9f3b366f1ed06b49dc1868bf0aefd884423db80f3431be442d0f993e448cc67b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 959be98ef3a72f37697288864e93789dc817fffda959499e426964b11e618a3e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
