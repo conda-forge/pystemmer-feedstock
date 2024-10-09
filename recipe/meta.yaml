@@ -12,6 +12,8 @@ source:
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
+  script_env:
+    - PYSTEMMER_SYSTEM_LIBSTEMMER=true
 
 requirements:
   build:
