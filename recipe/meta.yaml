@@ -1,12 +1,11 @@
-{% set name = "pystemmer" %}
 {% set version = "2.2.0.3" %}
 
 package:
-  name: {{ name|lower }}
+  name: pystemmer
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/p/pystemmer/pystemmer-{{ version }}.tar.gz
   sha256: 9ac74c8d0f3358dbb050f64cddbb8d55021d831d92305d7c20780ea8d6c0020e
 
 build:
@@ -18,10 +17,10 @@ requirements:
     - {{ compiler('c') }}
     - {{ stdlib('c') }}
   host:
-    - python
-    - cython >=0.28.5,<1.0
-    - setuptools >=18.0
+    - cython >=0.28.5
     - pip
+    - python
+    - setuptools >=18.0
   run:
     - python
 
