@@ -40,7 +40,6 @@ about:
   license: MIT AND BSD-3-Clause
   license_file:
     - LICENSE
-    - libstemmer_c-2.2.0/COPYING
 
 extra:
   recipe-maintainers:
