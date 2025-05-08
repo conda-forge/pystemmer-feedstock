@@ -1,12 +1,12 @@
-{% set version = "2.2.0.3" %}
+{% set version = "3.0.0" %}
 
 package:
   name: pystemmer
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pystemmer/pystemmer-{{ version }}.tar.gz
-  sha256: 9ac74c8d0f3358dbb050f64cddbb8d55021d831d92305d7c20780ea8d6c0020e
+  url: https://pypi.org/packages/source/p/pystemmer/pystemmer-{{ version }}.tar.gz
+  sha256: eb9f31accf188e733f0f375cad1594f7cc21ad86b20977ccce0c7162c7c6c35e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -40,7 +40,6 @@ about:
   license: MIT AND BSD-3-Clause
   license_file:
     - LICENSE
-    - libstemmer_c-2.2.0/COPYING
 
 extra:
   recipe-maintainers:
