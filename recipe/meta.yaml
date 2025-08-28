@@ -5,12 +5,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/pystemmer/pystemmer-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/p/pystemmer/pystemmer-{{ version }}.tar.gz
   sha256: 9ac74c8d0f3358dbb050f64cddbb8d55021d831d92305d7c20780ea8d6c0020e
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
